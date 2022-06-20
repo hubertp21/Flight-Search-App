@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightmanageapp.LoginPanelController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="241.0" layoutX="1.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@/images/airplane_image.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="286.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="117.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/locker.jpg" />
+               </image></ImageView>
+            <Label layoutX="14.0" layoutY="122.0" text="Username">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="enterUsernameTextField" layoutX="84.0" layoutY="119.0" promptText="Username" />
+            <Label layoutX="14.0" layoutY="180.0" text="Password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="enterPasswordTextField" layoutX="84.0" layoutY="177.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="50.0" layoutY="241.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="26.0" prefWidth="176.0" style="-fx-background-color: #2424b6;" text="Login" textFill="WHITE" />
+            <Button fx:id="exitButton" layoutX="50.0" layoutY="336.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="26.0" prefWidth="176.0" style="-fx-background-color: #2424b6;" text="EXIT" textFill="WHITE" />
+            <Label fx:id="loginMessageLabel" layoutX="52.0" layoutY="215.0" prefHeight="18.0" prefWidth="172.0" />
+            <Button fx:id="registerButton" layoutX="50.0" layoutY="290.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="26.0" prefWidth="176.0" style="-fx-background-color: #2424b6;" text="Register" textFill="WHITE" />
+         </children></AnchorPane>
+   </right>
+</BorderPane>

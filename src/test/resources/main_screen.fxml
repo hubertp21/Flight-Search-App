@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightmanageapp.MainScreenController">
+   <children>
+      <TextField fx:id="fromTextField" layoutX="225.0" layoutY="116.0" promptText="From" />
+      <Button fx:id="searchButton" layoutX="274.0" layoutY="201.0" mnemonicParsing="false" onAction="#searchButtonOnAction" style="-fx-background-color: #2424b6;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <AnchorPane fx:id="flightsAnchorPane" layoutY="247.0" prefHeight="159.0" prefWidth="600.0" style="-fx-background-color: transparent;" visible="false">
+         <children>
+            <TableView fx:id="flightsTableView" editable="true" prefHeight="162.0" prefWidth="412.0">
+              <columns>
+                <TableColumn fx:id="fromTableColumn" prefWidth="110.5999892950058" text="From" />
+                <TableColumn fx:id="toTableColumn" prefWidth="109.20001983642578" text="To" />
+                  <TableColumn fx:id="dateTableColumn" prefWidth="102.20001220703125" text="Date" />
+                  <TableColumn fx:id="costTableColumn" minWidth="0.0" prefWidth="88.20001220703125" text="Cost" />
+              </columns>
+            </TableView>
+            <Button layoutX="463.0" layoutY="67.0" mnemonicParsing="false" style="-fx-background-color: #2424b6;" text="Book Flight" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+         </children></AnchorPane>
+      <Button layoutY="-6.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="178.0" style="-fx-background-color: #2424b6;" text="My Flights" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="exitButton" layoutX="421.0" layoutY="-6.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="42.0" prefWidth="178.0" style="-fx-background-color: #2424b6;" text="Exit" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <TextField fx:id="toTextField" layoutX="225.0" layoutY="160.0" promptText="To" />
+      <Label layoutX="237.0" layoutY="86.0" text="Find Your cheap flightTableView">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="153.0" fitWidth="185.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/airplane_small_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
